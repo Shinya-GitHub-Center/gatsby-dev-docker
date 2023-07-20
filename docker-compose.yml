@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  gatsby-dev:
+    build:
+      context: ./docker/gatsby-dev
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    volumes:
+      - type: bind
+        source: ./gatsby-dev
+        target: /home/node/workdir
+    user: node
+    environment:
+      - NODE_ENV=development
+    tty: true
+    stdin_open: true

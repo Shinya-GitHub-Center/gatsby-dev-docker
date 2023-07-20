@@ -1,0 +1,11 @@
+REPODIR="my-happy-repo"
+RMT_REPO_ADDR="https://gitlab.com/devops/my-happy-repo.git"
+GIT_UNAME="hoge"
+GIT_UMAIL="hoge@example.com"
+
+# Please do not change anything from here
+ADDLDIR=".LocalDevFiles"
+MDLDIR="node_modules"
+VSCDIR="$HOME/.vscode-server"
+VSCJSON="$HOME/.vscode-server/data/Machine/settings.json"
+VSCSET='{\n\t"remote.containers.gitCredentialHelperConfigLocation": "none",\n\t"github.gitAuthentication": false\n}'
